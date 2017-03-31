@@ -7,7 +7,8 @@ LABEL org.label-schema.url="https://www.pgadmin.org" \
       org.label-schema.name="pgAdmin" \
       org.label-schema.version="4"
 
-COPY pgadmin4 /pgadmin4	
+COPY pgadmin4 /pgadmin4
+COPY pgAdmin4Docker.py /pgadmin4/web/pgAdmin4Docker.py
 
 RUN set -x \
 	&&  apk add --no-cache postgresql-libs \
